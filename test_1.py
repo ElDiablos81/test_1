@@ -1,4 +1,8 @@
-def test_default_health():
-    health = 95
-    assert health == 95
-    assert 95 == 95
+def mul(a, b):
+    return a * b
+
+def test_mul_true():
+    assert mul(2,2) == 4
+
+def test_mul_false():
+    assert mul(2,2) == 5
