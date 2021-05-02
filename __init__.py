@@ -1,0 +1,1 @@
+all = ["test_1.py", "test_2.py", "test_3.py", "test_4.py"]
