@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Test Report</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<style>
+body {
+    font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+* {
+    word-break: break-all;
+}
+table, td, th, .dataid {
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    background: #fff;
+}
+section {
+    background: rgba(0, 0, 0, 0.05);
+    margin: 2ex;
+    padding: 1ex;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 130%;
+}
+h2 {
+    font-size: 120%;
+}
+h3 {
+    font-size: 100%;
+}
+h4 {
+    font-size: 85%;
+}
+h1, h2, h3, h4, a[href] {
+    cursor: pointer;
+    color: #0074d9;
+    text-decoration: none;
+}
+h3 strong, a.failed {
+    color: #ff4136;
+}
+.failed {
+    color: #ff4136;
+}
+a.success {
+    color: #3d9970;
+}
+pre {
+    font-family: 'Consolas', 'Deja Vu Sans Mono',
+                 'Bitstream Vera Sans Mono', 'Monaco',
+                 'Courier New', monospace;
+}
+
+.test-details,
+.traceback {
+    display: none;
+}
+section:target .test-details {
+    display: block;
+}
+
+</style>
+</head>
+<body>
+    <h1>Overview</h1>
+    <section>
+        <table>
+            <tr>
+                <th>Class</th>
+                <th class="failed">Fail</th>
+                <th>Error</th>
+                <th>Skip</th>
+                <th>Success</th>
+                <th>Total</th>
+            </tr>
+                <tr>
+                    <td>test_1.test_module01</td>
+                    <td class="failed">2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td class="failed">2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>4</td>
+            </tr>
+        </table>
+    </section>
+    <h1>Failure details</h1>
+            <section>
+                <h2>test_1.test_module01 (2 failures, 0 errors)</h2>
+                <div>
+                        <section id="test_1.test_module01:test_case03">
+                            <h3>test_case03: <strong>builtins.AssertionError</strong></h3>
+                            <div class="test-details">
+                                <h4>Traceback</h4>
+                                <pre class="traceback">Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod
+    method()
+  File "/Users/maximrychkov/PycharmProjects/test_1/venv/lib/python3.8/site-packages/nose/case.py", line 198, in runTest
+    self.test(*self.arg)
+  File "/Users/maximrychkov/PycharmProjects/test_1/test_module01.py", line 15, in test_case03
+    ok_(2+2 == 5, msg="Test Case Failure...")
+  File "/Users/maximrychkov/PycharmProjects/test_1/venv/lib/python3.8/site-packages/nose/tools/trivial.py", line 22, in ok_
+    raise AssertionError(msg)
+AssertionError: Test Case Failure...
+</pre>
+                                <h4>Details</h4>
+                                <pre>Test Case Failure...</pre>
+                            </div>
+                        </section>
+                        <section id="test_1.test_module01:test_case04">
+                            <h3>test_case04: <strong>builtins.AssertionError</strong></h3>
+                            <div class="test-details">
+                                <h4>Traceback</h4>
+                                <pre class="traceback">Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod
+    method()
+  File "/Users/maximrychkov/PycharmProjects/test_1/venv/lib/python3.8/site-packages/nose/case.py", line 198, in runTest
+    self.test(*self.arg)
+  File "/Users/maximrychkov/PycharmProjects/test_1/test_module01.py", line 18, in test_case04
+    eq_(2+2, 5, msg="Test Case Failure...")
+  File "/Users/maximrychkov/PycharmProjects/test_1/venv/lib/python3.8/site-packages/nose/tools/trivial.py", line 29, in eq_
+    raise AssertionError(msg or "%r != %r" % (a, b))
+AssertionError: Test Case Failure...
+</pre>
+                                <h4>Details</h4>
+                                <pre>Test Case Failure...</pre>
+                            </div>
+                        </section>
+                </div>
+            </section>
+
+    <h1>All tests</h1>
+    <section>
+        <h2>test_1.test_module01 (2 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_case01</a></li>
+                <li><a class="success">test_case02</a></li>
+                <li><a class="failed" href="#test_1.test_module01:test_case03">test_case03</a></li>
+                <li><a class="failed" href="#test_1.test_module01:test_case04">test_case04</a></li>
+        </ul>
+    </section>
+</body>
+<script>
+    Array.prototype.forEach.call(document.querySelectorAll('h1, h2, h3, h4'), function(el) {
+        el.addEventListener('click', function() {
+            el.nextElementSibling.style.display = document.defaultView.getComputedStyle(el.nextElementSibling).display == 'none' ? 'block' : 'none';
+        })
+    })
+</script>
+</html>

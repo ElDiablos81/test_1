@@ -1,1 +1,1 @@
-all = ["test_1.py", "test_2.py", "test_3.py", "test_4.py"]
+all = ["test_5.py", "test_6.py"]

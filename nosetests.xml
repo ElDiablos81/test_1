@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="4" errors="0" failures="2" skip="0"><testcase classname="test_1.test_module01" name="test_case01" time="0.000"></testcase><testcase classname="test_1.test_module01" name="test_case02" time="0.000"></testcase><testcase classname="test_1.test_module01" name="test_case03" time="0.000"><failure type="builtins.AssertionError" message="Test Case Failure..."><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod
+    method()
+  File "/Users/maximrychkov/PycharmProjects/test_1/venv/lib/python3.8/site-packages/nose/case.py", line 198, in runTest
+    self.test(*self.arg)
+  File "/Users/maximrychkov/PycharmProjects/test_1/test_module01.py", line 15, in test_case03
+    ok_(2+2 == 5, msg="Test Case Failure...")
+  File "/Users/maximrychkov/PycharmProjects/test_1/venv/lib/python3.8/site-packages/nose/tools/trivial.py", line 22, in ok_
+    raise AssertionError(msg)
+AssertionError: Test Case Failure...
+]]></failure></testcase><testcase classname="test_1.test_module01" name="test_case04" time="0.000"><failure type="builtins.AssertionError" message="Test Case Failure..."><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod
+    method()
+  File "/Users/maximrychkov/PycharmProjects/test_1/venv/lib/python3.8/site-packages/nose/case.py", line 198, in runTest
+    self.test(*self.arg)
+  File "/Users/maximrychkov/PycharmProjects/test_1/test_module01.py", line 18, in test_case04
+    eq_(2+2, 5, msg="Test Case Failure...")
+  File "/Users/maximrychkov/PycharmProjects/test_1/venv/lib/python3.8/site-packages/nose/tools/trivial.py", line 29, in eq_
+    raise AssertionError(msg or "%r != %r" % (a, b))
+AssertionError: Test Case Failure...
+]]></failure></testcase></testsuite>
